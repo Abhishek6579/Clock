@@ -1,4 +1,7 @@
+let audioTurn = new Audio("tick.mp3")
+
 setInterval(() => {
+    audioTurn.pause();
     d = new Date();
     htime = d.getHours();
     mtime = d.getMinutes();
@@ -6,6 +9,7 @@ setInterval(() => {
     hrotation = 30*htime + mtime/2;
     mrotation = 6*mtime;
     srotation = 6*stime;
+    audioTurn.play();
 
     hour.style.transform = `rotate(${hrotation}deg)`;
     minute.style.transform = `rotate(${mrotation}deg)`;
