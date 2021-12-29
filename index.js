@@ -1,7 +1,6 @@
 let audioTurn = new Audio("tick.mp3")
 
 setInterval(() => {
-    audioTurn.pause();
     d = new Date();
     htime = d.getHours();
     mtime = d.getMinutes();
